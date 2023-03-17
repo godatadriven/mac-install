@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Please enter your email for sshkey comment: "
 read email
 
