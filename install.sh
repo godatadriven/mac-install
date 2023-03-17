@@ -1,3 +1,6 @@
+echo "Please enter your email for sshkey comment: "
+read email
+
 ############ Prerequisites
 
 ## Install homebrew and Xcode CLI
@@ -28,7 +31,7 @@ echo '.venv/' >> ~/.gitignore
 echo "Global gitignore created"
 
 ## Generate SSH key
-ssh-keygen -t ed25519 -C "your_email@example.com" # TODO change / parameterize
+ssh-keygen -t ed25519 -C "${email}" # TODO change / parameterize
 
 echo "
 Host github.com
