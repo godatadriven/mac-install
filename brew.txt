@@ -1,2 +1,6 @@
 tree
 httpie
+git-lfs
+
+awscli
+azure-cli

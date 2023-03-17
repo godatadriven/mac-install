@@ -44,9 +44,6 @@ Host github.com
 
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
-## Git LFS
-brew install git-lfs
-
 ############ Terminal
 
 ## Get oh my zsh (plugins, themes for zsh).
@@ -153,12 +150,6 @@ brew install --cask google-cloud-sdk
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" # shell completions
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" # add to PATH
 
-## AWS
-brew install awscli
-
-## Azure
-brew install azure-cli
-
 
 ############ dbt
 
@@ -175,10 +166,6 @@ curl https://raw.githubusercontent.com/fishtown-analytics/dbt-completion.bash/ma
 echo 'autoload -U +X compinit && compinit' >> ~/.zshrc
 echo 'autoload -U +X bashcompinit && bashcompinit' >> ~/.zshrc
 echo 'source ~/.dbt-completion.bash' >> ~/.zshrc
-
-
-###### Docker
-brew install --cask docker
 
 
 ###### install visual studio code
