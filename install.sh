@@ -32,6 +32,10 @@ echo 'venv/' >> ~/.gitignore
 echo '.venv/' >> ~/.gitignore
 echo "Global gitignore created"
 
+## miscellaneous quality-of-life settings
+git config --global pull.ff only
+git config --global fetch.prune true
+
 ## Generate SSH key
 ssh-keygen -t ed25519 -C "${email}" # TODO change / parameterize
 
@@ -78,6 +82,19 @@ chmod 755 /usr/local/share/zsh
 chmod 755 /usr/local/share/zsh/site-functions
 
 source ~/.zshrc
+
+## Some basic vim configuration
+touch ~/.vimrc
+echo 'set nocompatible  " disable obsolete functions
+set noswapfile    " disable writing *.swp files
+
+syntax on         " syntax highlighting
+set number        " show line numbers
+set cursorline    " highlight the cursor line
+set scrolloff=4   " scroll when cursor line is this far from edge
+set showcmd       " show pending command at bottom of screen
+' >> ~/.vimrc
+
 
 ############ Python, dbt & Utilities
 
@@ -188,3 +205,10 @@ echo "VS Code $(code --version) successfully installed"
 # Install user apps (adjust to your preferences)
 xargs brew install < brew.txt
 xargs brew install --cask < brew_cask.txt
+
+###### Wrap up
+echo "Construction complete!"
+echo "Don't forget to configure your name and email for git commits:"
+echo "\tgit config --global user.name 'Your Name'"
+echo "\tgit config --global user.email 'Your.Name@xebia.com'"
+echo "See https://xebia.atlassian.net/l/cp/aycvFjFD for some tips about the latter"
