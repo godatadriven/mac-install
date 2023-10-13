@@ -1,6 +1,14 @@
-tree
-httpie
+fd
+fzf
+gh
 git-lfs
+httpie
+htop
+jq
+ripgrep
+tree
+wget
+zoxide
 
 awscli
 azure-cli
