@@ -6,6 +6,7 @@ httpie
 htop
 jq
 ripgrep
+tldr
 tree
 wget
 zoxide
