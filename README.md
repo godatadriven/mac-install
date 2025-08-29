@@ -1,6 +1,12 @@
 # mac-install
 Setting up your new Macbook with an install script.
 
+# Install brew
+https://brew.sh
+
+## Install apps using Bundle
+`brew bundle install`
+
 # Usage
 `zsh install.sh`
 
