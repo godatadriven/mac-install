@@ -1,17 +1,15 @@
 # mac-install
 Setting up your new Macbook with an install script.
 
-# Install brew
-https://brew.sh
-
-## Install apps using Bundle
-`brew bundle install`
-
 # Usage
-`zsh install.sh`
+`bash install.sh`
 
-## Brew install list
-Apps that do not have a post install or are not used in `install.sh` are installed via the lists in the bres text files.
-The apps are loaded from:
-- `brew.txt` if the app can be installed with `brew install <app>`
-- `brew_cask.txt` if the app can be installed with `brew install --cask <app>`
+`install.sh` contains common setup and post install commands.
+Note: not tested with bash.
+
+## List of apps to install
+Apps and vscode extensions are listed in Brewfile.
+
+### Get your personal brewfile
+On your old device run:
+`brew bundle dump`
