@@ -206,6 +206,22 @@ echo "VS Code $(code --version) successfully installed"
 xargs brew install < brew.txt
 xargs brew install --cask < brew_cask.txt
 
+
+############ Pomodoro CLI
+echo "work() {
+  # usage: work 10m, work 60s etc. Default is 20m
+  timer "${1:-20m}" && terminal-notifier -message 'Pomodoro'\
+        -title 'Work Timer is up! Take a Break 😊'\
+        -sound Crystal
+}
+
+rest() {
+  # usage: rest 10m, rest 60s etc. Default is 5m
+  timer "${1:-5m}" && terminal-notifier -message 'Pomodoro'\
+        -title 'Break is over! Get back to work 😬'\
+        -sound Crystal
+}" >> ~/.zshrc
+
 ###### Wrap up
 echo "Construction complete!"
 echo "Don't forget to configure your name and email for git commits:"
